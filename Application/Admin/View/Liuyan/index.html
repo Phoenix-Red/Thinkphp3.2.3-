@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<include file="Public:header" />
+	<include file="Public:page_css" />
+
+	<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+
+		<include file="Public:nav" />
+ 		<div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-12">
+                <h2>留言列表</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home"></i> 主页</a>
+                    </li>
+                    <li>
+                        <a>留言管理</a>
+                    </li>
+                    <li>
+                        <strong>留言列表</strong>
+                    </li>
+                </ol>
+            </div>              
+        </div>		
+		<br />
+		<br />
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<h5><i class="fa fa-tasks"></i> 留言列表</h5>
+					</div>
+					<div class="ibox-content">
+						<table class="table table-bordered">
+							<thead>
+								<tr class="long-tr">
+									<th width="5%">编号</th>
+									<th width="10%">昵称</th>
+                                    <th>留言内容</th>
+                                    <th width="15%">留言日期</th>
+                                    <th width="10%">来自</th>
+                                    <th width="12%">状态</th>
+                                    <th width="20%">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<volist name="list" id="vo">
+									<tr class="long-td">
+										<td>{$vo.id}</td>
+										<td>{$vo.username}</td>
+                                        <td style="text-align:left">{$vo.content|strip_tags|mb_substr=0,25,'utf-8'}...</td>
+                                        <td>{$vo.add_time|date='Y年m月d日 H:i:s',###}</td>
+                                        <td>{$vo.ip}</td>
+                                        <td>
+                                        	<if condition="$vo.c_content neq null">
+                                        			<span class="label label-primary">已回复</span>
+                                        		<else/>
+                                        			<span class="label label-danger">未回复</span>
+                                        	</if>
+                                        </td>
+										<td>
+											<a href="{:U('Liuyan/edit',array('id'=>$vo['id']))}" class="btn btn-primary">
+												<i class="fa fa-pencil"></i> 回复</a>&nbsp;&nbsp;
+											<a href="javascript:;" onclick="return del({$vo.id},{:I('p',1)});" class="btn btn-danger">
+												<i class="fa fa-trash-o"></i> 删除</a>
+										</td>
+									</tr>
+								</volist>
+							</tbody>
+						</table>
+						<div class="pages" style=" text-align: right;">
+							{$page}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		function del(id,p){
+			layer.confirm('删除后将不可恢复，你确定要删除吗？', {icon: 3}, function(index){
+			layer.close(index);
+			window.location.href="__URL__/del/id/"+id+"/p/"+p+"";
+			});
+		}
+		</script>
+		<include file="Public:footer" />
+
+	</body>
+
+</html>

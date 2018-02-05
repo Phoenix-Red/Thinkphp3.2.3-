@@ -1,0 +1,160 @@
+[ 2017-08-21T09:03:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023159s ]
+NOTIC: [8] Undefined index: code E:\xampp\htdocs\blog\blog_senior\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 63 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 65 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 67 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 69 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 71 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 73 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 75 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 77 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 79 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 81 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 83 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 85 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 87 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 89 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 91 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 93 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 95 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 97 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 99 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 101 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 103 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 105 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 107 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 113 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 115 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 117 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 119 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 121 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 123 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 125 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 127 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 129 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 131 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 133 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 135 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 137 行.
+SQL: SHOW COLUMNS FROM `lxb_article` [ RunTime:0.0919s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `lxb_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `lxb_carousel_list` [ RunTime:0.0352s ]
+SQL: SELECT * FROM `lxb_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxb_article_cate` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `lxb_article_cate`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `lxb_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxb_liuyan` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `lxb_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0003s ]
+SQL: SELECT `a_id` FROM `lxb_article` WHERE ( a_views > 0 )  [ RunTime:0.0002s ]
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given E:\xampp\htdocs\blog\blog_senior\Application\Home\Controller\BaseController.class.php 第 84 行.
+SQL: SELECT * FROM `lxb_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `lxb_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxb_article` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `lxb_article_cate` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lxb_article_cate`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_article` LIMIT 1   [ RunTime:0.0376s ]
+SQL: SELECT * FROM `lxb_article` INNER JOIN lxb_article_cate ON lxb_article_cate.cate_id = lxb_article.cate_id  ORDER BY a_id desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000791s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000837s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.017212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029814s ]
+
+[ 2017-08-21T09:30:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+NOTIC: [8] Undefined index: code E:\xampp\htdocs\blog\blog_senior\Application\Home\Controller\BaseController.class.php 第 24 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 63 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 65 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 67 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 69 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 71 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 73 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 75 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 77 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 79 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 81 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 83 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 85 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 87 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 89 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 91 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 93 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 95 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 97 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 99 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 101 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 103 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 105 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 107 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 109 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 111 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 113 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 115 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 117 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 119 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 121 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 123 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 125 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 127 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 129 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 131 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 133 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 135 行.
+NOTIC: [2] preg_match(): Delimiter must not be alphanumeric or backslash E:\xampp\htdocs\blog\blog_senior\Application\Common\Common\function.php 第 137 行.
+SQL: SHOW COLUMNS FROM `lxb_article` [ RunTime:0.0025s ]
+SQL: SELECT `a_keyword`,`a_id`,`create_time` FROM `lxb_article` WHERE ( a_keyword != '' and a_views > 0 ) ORDER BY create_time desc LIMIT 50   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_carousel_list` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `lxb_carousel_list` WHERE ( img != '' and state > 0 ) ORDER BY orderby  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lxb_article_cate` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lxb_article_cate`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lxb_link` WHERE ( state = 1 ) ORDER BY orderby  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxb_liuyan` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lxb_liuyan` ORDER BY add_time desc LIMIT 4   [ RunTime:0.0002s ]
+SQL: SELECT `a_id` FROM `lxb_article` WHERE ( a_views > 0 )  [ RunTime:0.0002s ]
+NOTIC: [2] array_rand() expects parameter 1 to be array, null given E:\xampp\htdocs\blog\blog_senior\Application\Home\Controller\BaseController.class.php 第 84 行.
+SQL: SELECT * FROM `lxb_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article` WHERE `a_id` = null LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `a_id`,`photo`,`a_title`,`a_remark`,`a_keyword`,`cate_id`,`create_time`,`last_time`,`a_content`,`a_views`,`a_type`,`a_red`,`a_from`,`a_writer`,`create_ip` FROM `lxb_article` WHERE ( a_views > 0 ) ORDER BY a_views desc LIMIT 12   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lxb_article` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lxb_article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lxb_article_cate`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article` INNER JOIN lxb_article_cate ON lxb_article_cate.cate_id = lxb_article.cate_id  ORDER BY a_id desc LIMIT 0,6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<include file="Public:header" />
+	<include file="Public:page_css" />
+	<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+		<include file="Public:nav" />
+		<div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-12">
+                <h2>添加广告类型</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home"></i> 主页</a>
+                    </li>
+                    <li>
+                        <a>广告类型管理</a>
+                    </li>
+                    <li>
+                        <strong>添加广告类型</strong>
+                    </li>
+                </ol>
+            </div>              
+        </div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<h5>添加广告类型</h5>
+						<div class="ibox-tools">
+							<a class="collapse-link">
+								<i class="fa fa-chevron-up"></i>
+							</a>
+						</div>
+					</div>
+					<div class="ibox-content">
+						<form id="form-wizard" action="{:U('Advert/addtype')}" method="post" class="form-horizontal">
+							<div class="form-group">
+								<label class="col-sm-2 control-label">标题</label>
+								<div class="col-sm-6">
+									<input type="text" name="name" placeholder="输入广告标题" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">内容</label>
+								<div class="col-sm-6">
+									<textarea type="text" name="note" style="height: 150px;" placeholder="输入备注信息" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<div class="col-sm-4 col-sm-offset-2">
+									<button class="btn btn-primary" type="submit">保存信息</button>&nbsp;&nbsp;&nbsp;
+									<a class="btn btn-danger" href="{:U('Advert/indextype')}">取消</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Public:footer" />
+	</body>
+
+</html>

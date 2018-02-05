@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<include file="Public:header" />	
+	<link href="__PUBLIC__/Admin/css/plugins/switchery/switchery.css" rel="stylesheet"><!--IOS开关样式-->	    	
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<include file="Public:page_css" />
+	<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+		<include file="Public:nav" />
+		<div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-12">
+                <h2>编辑链接</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home"></i> 主页</a>
+                    </li>
+                    <li>
+                        <a>链接管理</a>
+                    </li>
+                    <li>
+                        <strong>编辑链接</strong>
+                    </li>
+                </ol>
+            </div>              
+        </div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<div class="ibox-tools">
+							<a class="collapse-link">
+								<i class="fa fa-chevron-up"></i>
+							</a>
+						</div>
+					</div>
+					<div class="ibox-content">
+						<form class="form-horizontal" method="post" action="{:U('runedit')}" name="signupForm" id="signupForm">	
+							<input type="hidden" name="id" value="{$detail.id}" />
+							<div class="form-group">
+                                <label class="col-sm-2 control-label">名称</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="name" id="name" value="{$detail.name}" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">域名</label>
+                                <div class="col-sm-6">
+                                    <input type="text" name="url" id="url" value="{$detail.url}" class="form-control">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">是否显示</label>
+								<div class="col-sm-6">
+									<div class="radio">
+										<if condition="$detail['state'] eq 1 ">
+											<input type="checkbox" name='state' value="1" class="js-switch" checked />
+	                        			<else/>
+	                        				<input type="checkbox" name='state' value="1" class="js-switch" />
+	                        			</if>
+	                        		</div>
+								</div>
+							</div>
+                            <div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">排序</label>
+								<div class="col-sm-6">
+									<input type="text" name="orderby" id="orderby" value="{$detail.orderby}" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<div class="col-sm-4 col-sm-offset-2">
+									<button class="btn btn-primary" type="submit">保存内容</button>
+									<a class="btn btn-danger" href="{:U('Link/index')}">取消</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Public:footer" />
+	<script src="__PUBLIC__/Admin/js/plugins/switchery/switchery.js"></script><!--IOS开关样式-->	 
+	<script src="__PUBLIC__/Admin/js/plugins/validate/jquery.validate.min.js"></script>
+	<script src="__PUBLIC__/Admin/js/plugins/validate/messages_zh.min.js"></script>
+	
+	<script src="__PUBLIC__/Admin/js/jquery.form.js"></script>
+	  <script>
+	  	$.validator.setDefaults({
+		highlight: function(e) {
+			$(e).closest(".form-group").removeClass("has-success").addClass("has-error")
+		},
+		success: function(e) {
+			e.closest(".form-group").removeClass("has-error").addClass("has-success")
+		},
+		errorElement: "span",
+		errorPlacement: function(e, r) {
+			e.appendTo(r.is(":radio") || r.is(":checkbox") ? r.parent().parent().parent() : r.parent())
+		},
+		errorClass: "help-block m-b-none",
+		validClass: "help-block m-b-none"
+	}), $().ready(function() {
+		
+		var e = "<i class='fa fa-times-circle'></i> ";
+		$("#signupForm").validate({
+			rules: {								
+				name:"required",
+				url:"required",
+				orderby:"required",	
+			},
+			messages: {								
+				name: e + "请输入名称",
+				url: e + "请输入域名",
+				orderby: e + "请输入排序",					
+			}
+		})
+	});
+	
+	$(function(){		
+		$('#signupForm').ajaxForm({		
+			success: complete, 
+			dataType: 'json'
+		});
+		
+		function complete(data){		
+			if(data.status==1){
+				
+				layer.alert(data.info, {icon: 6}, function(index){
+	 			layer.close(index);
+				window.location.href=data.url;
+				});
+			}else{
+				layer.alert(data.info, {icon: 5});
+				return false;	
+			}
+		}	 
+	});
+
+
+		//IOS开关样式配置
+       var elem = document.querySelector('.js-switch');
+            var switchery = new Switchery(elem, {
+                color: '#1AB394'
+            });
+        var config = {
+            '.chosen-select': {},                    
+        }
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+    </script>
+	</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<include file="Public:header" />
+	<include file="Public:page_css" />
+
+	<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+
+		<include file="Public:nav" />
+		<div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-12">
+                <h2>广告类型列表</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home"></i> 主页</a>
+                    </li>
+                    <li>
+                        <a>广告类型管理</a>
+                    </li>
+                    <li>
+                        <strong>广告类型列表</strong>
+                    </li>
+                </ol>
+            </div>              
+        </div>
+        <br />
+		<a href="{:U('Advert/addtype')}" class="btn btn-primary">添加广告类型</a>
+		<br />
+		<br />
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<h5><i class="fa fa-tasks"></i> 广告类型管理</h5>
+					</div>
+					<div class="ibox-content">
+						<table class="table table-bordered">
+							<thead>
+								<tr class="long-tr">
+									<th>编号</th>
+                                    <th>标题</th>                                  
+                                    <th>备注</th>
+                                    <th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<volist name="list" id="vo">
+									<tr class="long-td">
+										<td width="5%">{$vo.id}</td>
+										<td>{$vo.name}</td>
+										<td>{$vo.note}</td>
+										<td width="30%">
+											<a href="{:U('advert/edittype',array('id'=>$vo['id']))}" class="btn btn-primary btn-mini">
+												<i class="fa fa-pencil"></i> 编辑</a>&nbsp;&nbsp;
+											<a onClick="return confirm('是否删除此条记录')" href="{:U('advert/deltype',array('id'=>$vo['id']))}" class="btn btn-danger">
+												<i class="fa fa-trash-o"></i> 删除</a>
+										</td>
+									</tr>
+								</volist>
+							</tbody>
+						</table>
+						<div class="pages" style=" text-align: right;">
+							{$page}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Public:footer" />
+	</body>
+
+</html>

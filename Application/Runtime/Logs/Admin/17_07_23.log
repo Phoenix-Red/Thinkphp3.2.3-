@@ -1,0 +1,1260 @@
+[ 2017-07-23T12:27:27+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-07-23T12:27:28+08:00 ] 127.0.0.1 /Admin/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-07-23T12:27:39+08:00 ] 127.0.0.1 /Admin/Login/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `lxb_admin` [ RunTime:0.0797s ]
+SQL: SELECT * FROM `lxb_admin` WHERE `user` = 'Phoenix' AND `state` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `lxb_admin` SET `last_logintime`='1500784059',`last_loginip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0003s ]
+
+[ 2017-07-23T12:27:39+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-07-23T12:27:54+08:00 ] 127.0.0.1 /Admin/system/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0449s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_role` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\86174e1f3cc77f335ad91dcb745bd53f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-07-23T12:27:59+08:00 ] 127.0.0.1 /Admin/system/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `lxb_admin` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_admin` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_admin` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\0abc04ef7f29fab7e9aa3e4960b2705d.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-07-23T12:28:01+08:00 ] 127.0.0.1 /Admin/System/addrole.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\f843bb4574288e3540e6f314be7d5e36.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-07-23T12:28:14+08:00 ] 127.0.0.1 /Admin/System/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lxb_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\86174e1f3cc77f335ad91dcb745bd53f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-07-23T12:28:16+08:00 ] 127.0.0.1 /Admin/system/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `lxb_admin` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_admin` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_admin` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\0abc04ef7f29fab7e9aa3e4960b2705d.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-07-23T12:28:17+08:00 ] 127.0.0.1 /Admin/System/adduser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `lxb_role` WHERE `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\a42586443ff178d93d0e9508c339c414.php 第 147 行.
+NOTIC: [8] Undefined variable: nowtime E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\a42586443ff178d93d0e9508c339c414.php 第 306 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-07-23T12:28:18+08:00 ] 127.0.0.1 /Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+ERR: 非法操作:index
+
+[ 2017-07-23T12:28:20+08:00 ] 127.0.0.1 /Admin/system/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `lxb_admin` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_admin` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_admin` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\0abc04ef7f29fab7e9aa3e4960b2705d.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-07-23T12:28:23+08:00 ] 127.0.0.1 /Admin/System/adduser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0519s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `lxb_role` WHERE `status` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\a42586443ff178d93d0e9508c339c414.php 第 147 行.
+NOTIC: [8] Undefined variable: nowtime E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\a42586443ff178d93d0e9508c339c414.php 第 306 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-07-23T12:28:23+08:00 ] 127.0.0.1 /Admin/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0661s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+ERR: 非法操作:index
+
+[ 2017-07-23T12:28:27+08:00 ] 127.0.0.1 /Admin/system/indexnotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_notice` [ RunTime:0.0529s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_notice` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxb_notice` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\de1ad2fc2b1f366aab3cdbd712582bcc.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-07-23T12:28:30+08:00 ] 127.0.0.1 /Admin/system/carousel_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_carousel_list` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_carousel_list` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_carousel_list` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\90daddc669d797e3fcaec719b01b42ba.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2017-07-23T12:28:35+08:00 ] 127.0.0.1 /Admin/system/indexnotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_notice` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_notice` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `lxb_notice` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\de1ad2fc2b1f366aab3cdbd712582bcc.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-07-23T12:28:36+08:00 ] 127.0.0.1 /Admin/system/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0347s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `lxb_admin` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_admin` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxb_admin` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\0abc04ef7f29fab7e9aa3e4960b2705d.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-07-23T12:28:58+08:00 ] 127.0.0.1 /Admin/site/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\857b1a6610f546bd792cb0f882368043.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2017-07-23T12:29:05+08:00 ] 127.0.0.1 /Admin/news/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_news` [ RunTime:0.0363s ]
+SQL: SHOW COLUMNS FROM `lxb_newscate` [ RunTime:0.0353s ]
+SQL: SELECT * FROM `lxb_newscate`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_news` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_news` LIMIT 0,5   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 148 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-07-23T12:29:09+08:00 ] 127.0.0.1 /Admin/News/edit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_news` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `lxb_newscate` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_newscate`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxb_news` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 151 行.
+NOTIC: [8] Undefined variable: nowtime E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 290 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-07-23T12:29:11+08:00 ] 127.0.0.1 /Admin/News/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_news` [ RunTime:0.0296s ]
+SQL: SHOW COLUMNS FROM `lxb_newscate` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `lxb_newscate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-07-23T12:29:27+08:00 ] 127.0.0.1 /Admin/News/edit/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0566s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_news` [ RunTime:0.0758s ]
+SQL: SHOW COLUMNS FROM `lxb_newscate` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_newscate`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_news` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `lxb_news` SET `image_url`='./images/2015-11-24/565477562ca10.jpg',`update_time`='1500784167',`title`='2016年山东省高校毕业生双向选择洽谈会昨开幕 电子商务和创新创业人才受青睐',`keyword`='333334444',`info`='<p><span style=\"color: rgb(0, 0, 0); font-family: 宋体, serif; font-size: 14px; line-height: 23px; text-align: justify;\">&nbsp; 兰州晚报讯（记者朱浩源文/图）11月7日，由省人力资源市场和省高校毕业生就业办公室联合举办的“第三届大中城市联合招聘高校毕业生专场活动甘肃分会场暨2016年甘肃省高校毕业生双向选择洽谈会”在省高新技术人才市场开幕，来自省内外的157家用人单位，将提供各类就业岗位1.1万个。据了解，这是今年重点针对高校毕业生的第3场大型招聘活动。</span></p><p style=\"padding: 0px 0px 15px; margin-top: 0px; margin-bottom: 0px; font-size: 14px; line-height: 25px; color: rgb(0, 0, 0); font-family: 宋体, serif; text-align: justify; white-space: normal;\">&nbsp;&nbsp;&nbsp;&nbsp;当日上午9时30分，省高新技术人才市场内人头攒动。记者在三楼青海格尔木一家企业招聘展位前看到求职者人满为患。据该单位张经理介绍：“虽说企业地处格尔木市，公司周边条件艰苦，但已有兰州工业学院和兰州资源环境职业技术学院的180多名毕业生投了简历，其中53人达成意向、10人已现场签约。”</p><p style=\"padding: 0px 0px 15px; margin-top: 0px; margin-bottom: 0px; font-size: 14px; line-height: 25px; color: rgb(0, 0, 0); font-family: 宋体, serif; text-align: justify; white-space: normal;\">&nbsp;&nbsp;&nbsp;&nbsp;记者在采访中了解到，与以往招聘会相比，此次招聘会上电子商务和创新创业人才受青睐。据悉，山东省烟台市电子商务产业园招聘30多名电子商务类人才，而山东一些服装、日用品企业也需要大量设计策划及与电子商务相关的毕业生。</p><p style=\"padding: 0px 0px 15px; margin-top: 0px; margin-bottom: 0px; font-size: 14px; line-height: 25px; color: rgb(0, 0, 0); font-family: 宋体, serif; text-align: justify; white-space: normal;\">&nbsp;&nbsp;&nbsp;&nbsp;在招聘会现场，浙江省奉化市大学生创业园展位前，也聚集了不少求职者。一位大学生问：“你们的园区是啥时候建成的，都集中了哪些类型的企业？”这位负责人很耐心地解释说：“奉化市大学生创业园成立于2006年4月，是以市科技创业服务中心为综合管理基地，集中了电子商务、文化创意、软件研发、科技型企业等。”听完后，该大学生说：“我回去好好考虑一下”。</p><p style=\"padding: 0px 0px 15px; margin-top: 0px; margin-bottom: 0px; font-size: 14px; line-height: 25px; color: rgb(0, 0, 0); font-family: 宋体, serif; text-align: justify; white-space: normal;\"><img src=\"http://123.57.146.56:8083/Uploads//images/2015-11-10//5641849f92e7b.jpg\"/></p><p><br/></p>',`cate_id`='4' WHERE `id` = 4 [ RunTime:0.0505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-07-23T12:29:28+08:00 ] 127.0.0.1 /Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_news` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `lxb_newscate` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `lxb_newscate`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_news` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_news` LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 148 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant cate_id - assumed 'cate_id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 219 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-07-23T12:29:30+08:00 ] 127.0.0.1 /Admin/news/newscate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_newscate` [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_newscate` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_newscate` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\a11ab798cf32ac5670fcc38311d36b9c.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-07-23T12:29:38+08:00 ] 127.0.0.1 /Admin/advert/indextype.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_adverttype` [ RunTime:0.0340s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_adverttype` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_adverttype` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\f952fc7ba8fc0514afe168f05ac7bb14.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2017-07-23T12:29:40+08:00 ] 127.0.0.1 /Admin/advert/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_advert` [ RunTime:0.0678s ]
+SQL: SHOW COLUMNS FROM `lxb_adverttype` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_advert` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_advert` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_adverttype`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\394b095ea5cbaa5051fbcfe2ce85492e.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-07-23T12:29:51+08:00 ] 127.0.0.1 /Admin/article/indextype.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_article_cate` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_article_cate` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article_cate` LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\4cd5d37317e3270ae590940677364ce7.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-07-23T12:30:05+08:00 ] 127.0.0.1 /Admin/article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `lxb_article_cate` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article` ORDER BY a_id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_article_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-07-23T12:30:08+08:00 ] 127.0.0.1 /Admin/said/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_said` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_said` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxb_said` ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\1bb548e9566cd0079e7a32163353e0b9.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-07-23T12:30:09+08:00 ] 127.0.0.1 /Admin/liuyan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_liuyan` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_liuyan` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_liuyan` ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\b9e95b07544c59256d8cead27a6a52e3.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-07-23T12:30:11+08:00 ] 127.0.0.1 /Admin/link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_link` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lxb_link` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\1e2c869bd8911c3f098d2a5c15bf2453.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2017-07-23T12:30:17+08:00 ] 127.0.0.1 /Admin/link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_link` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_link` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\1e2c869bd8911c3f098d2a5c15bf2453.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-07-23T12:30:27+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-07-23T12:30:34+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-07-23T12:30:38+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-07-23T12:32:28+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-07-23T12:32:52+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 110 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-07-23T12:32:53+08:00 ] 127.0.0.1 /Admin/link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_link` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_link` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\1e2c869bd8911c3f098d2a5c15bf2453.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-07-23T12:33:03+08:00 ] 127.0.0.1 /Admin/link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0636s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_link` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_link` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\1e2c869bd8911c3f098d2a5c15bf2453.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2017-07-23T12:33:35+08:00 ] 127.0.0.1 /Admin/link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_link` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_link` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\1e2c869bd8911c3f098d2a5c15bf2453.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-07-23T12:33:56+08:00 ] 127.0.0.1 /Admin/link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_link` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_link` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_link` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\1e2c869bd8911c3f098d2a5c15bf2453.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2017-07-23T12:34:01+08:00 ] 127.0.0.1 /Admin/link/search_results.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0557s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+ERR: 非法操作:search_results
+
+[ 2017-07-23T21:20:29+08:00 ] 127.0.0.1 /Admin/system/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006724s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0771s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_role` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.023714s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.023779s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\86174e1f3cc77f335ad91dcb745bd53f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.318274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.318322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.071043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.071109s ]
+
+[ 2017-07-23T21:20:32+08:00 ] 127.0.0.1 /Admin/System/addrole.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\f843bb4574288e3540e6f314be7d5e36.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-07-23T21:20:34+08:00 ] 127.0.0.1 /Admin/System/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_role` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\86174e1f3cc77f335ad91dcb745bd53f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-07-23T21:20:36+08:00 ] 127.0.0.1 /Admin/System/setting/id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_access` [ RunTime:0.1649s ]
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0085s ]
+SQL: SELECT `node_id` FROM `lxb_access` WHERE ( role_id = 24 )  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`pid`,`menuflag` FROM `lxb_treenode`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: ids E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\SystemController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\c565d546dfb6925ce47493ac9ddd18e5.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-07-23T21:20:43+08:00 ] 127.0.0.1 /Admin/System/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Undefined index: menu_list E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\blog\blog_senior\Application\Admin\Controller\BaseController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `lxb_treenode` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `lxb_treenode` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lxb_role` [ RunTime:0.0077s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lxb_role` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lxb_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: Os E:\xampp\htdocs\blog\blog_senior\Application\Runtime\Cache\Admin\86174e1f3cc77f335ad91dcb745bd53f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+

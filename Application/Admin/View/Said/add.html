@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<include file="Public:header" />	
+	<link href="__PUBLIC__/Admin/css/plugins/switchery/switchery.css" rel="stylesheet"><!--IOS开关样式-->	    	
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Common/Ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Common/Ueditor/ueditor.all.min.js"></script>
+	<script language="javascript" type="text/javascript" src="__ROOT__/Statics/My97/WdatePicker.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<include file="Public:page_css" />
+
+	<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+		<include file="Public:nav" />
+		<div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-12">
+                <h2>发布说说</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home"></i> 主页</a>
+                    </li>
+                    <li>
+                        <a>说说管理</a>
+                    </li>
+                    <li>
+                        <strong>发布说说</strong>
+                    </li>
+                </ol>
+            </div>              
+        </div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<div class="ibox-tools">
+							<a class="collapse-link">
+								<i class="fa fa-chevron-up"></i>
+							</a>
+						</div>
+					</div>
+					<div class="ibox-content">
+						<form class="form-horizontal" method="post" action="{:U('runadd')}" name="signupForm" id="signupForm">							
+							<div class="form-group">
+                                <label class="col-sm-2 control-label">内容：</label>
+                                <div class="col-sm-10">
+                                    <script type="text/plain" id="editor" name="s_content" style="width:78%;height:200px;"></script>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">是否显示</label>
+								<div class="col-sm-6">
+									<div class="radio ">
+	                        			<input type="checkbox" name='s_view' value="1" class="js-switch" checked />&nbsp;&nbsp;默认显示	                        			
+	                        		</div>
+								</div>
+							</div>
+                            <div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">作者</label>
+								<div class="col-sm-6">
+									<input type="text" name="s_writer" id="s_writer" value="{$admin['username']}" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<div class="col-sm-4 col-sm-offset-2">
+									<button class="btn btn-primary" type="submit">保存内容</button>
+									<a class="btn btn-white" href="{:U('Said/index')}">取消</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<include file="Public:footer" />
+	<script src="__PUBLIC__/Admin/js/plugins/switchery/switchery.js"></script><!--IOS开关样式-->	  
+  	<script type="text/javascript">
+
+		$(function(){
+			
+			$('#signupForm').ajaxForm({		
+				success: complete, 
+				dataType: 'json'
+			});
+			
+			function complete(data){
+
+				if(data.status==1){
+					layer.alert(data.info, {icon: 6}, function(index){
+		 			layer.close(index);
+					window.location.href=data.url;
+					});
+				}else{
+					layer.alert(data.info, {icon: 5});
+					return false;	
+				}
+			}
+		 
+		});
+		
+	</script>
+	<script type="text/javascript">
+	
+	var editorOption = { 
+	toolbars:[[
+            'fullscreen', 'source', '|', 'undo', 'redo', '|',
+            'bold', 'italic', 'underline','removeformat', 'formatmatch', 
+            'pasteplain', '|', 'forecolor', 'fontfamily', 'fontsize', '|', 'link', 'unlink',
+            'simpleupload','emotion','attachment']], 
+	}; 
+	var editor_a = new baidu.editor.ui.Editor(editorOption);
+	editor_a.render('editor');
+	
+	</script>
+	<script>
+		//IOS开关样式配置
+       var elem = document.querySelector('.js-switch');
+            var switchery = new Switchery(elem, {
+                color: '#1AB394'
+            });
+        var config = {
+            '.chosen-select': {},                    
+        }
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+    </script>
+	</body>
+
+</html>

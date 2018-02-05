@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<include file="Public:header" />
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Common/Ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="__PUBLIC__/Common/Ueditor/ueditor.all.min.js"></script>
+	<include file="Public:page_css" />
+
+	<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+		<include file="Public:nav" />
+		<div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-12">
+                <h2>回复留言</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home"></i> 主页</a>
+                    </li>
+                    <li>
+                        <a>留言管理</a>
+                    </li>
+                    <li>
+                        <strong>回复留言</strong>
+                    </li>
+                </ol>
+            </div>              
+        </div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<div class="ibox-tools">
+							<a class="collapse-link">
+								<i class="fa fa-chevron-up"></i>
+							</a>
+						</div>
+					</div>
+					<div class="ibox-content">
+						<form class="form-horizontal" method="post" action="{:U('runedit')}" name="signupForm" id="signupForm">
+						<input type="hidden" name="id" value="{$detail.id}" />							
+							<div class="form-group">
+								<label class="col-sm-2 control-label">留言昵称</label>
+								<div class="col-sm-6">
+									<input type="text" name="username" id="username" value="{$detail.username}" class="form-control">
+								</div>
+							</div>												
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">留言内容</label>
+								<div class="col-sm-6">
+									<textarea type="text" rows="5" name="content" id="content" class="form-control">{$detail.content|default=''}</textarea>
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">留言IP</label>
+								<div class="col-sm-6">
+									<input type="text" name="ip" id="ip" value="{$detail.ip|getIpaddr}" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">留言设备</label>
+								<div class="col-sm-6">
+									<input type="text" name="from" id="from" value="{$detail.from}" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">留言时间</label>
+								<div class="col-sm-6">
+									<input type="text" name="add_time" id="add_time" value="{$detail.add_time|date='Y年m月d日 H:i:s',###}" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">留言邮箱</label>
+								<div class="col-sm-6">
+									<input type="text" name="email" id="email" value="{$detail.email}" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">回复内容</label>
+								<div class="col-sm-10">
+									<script type="text/plain" id="editor" name="c_content" style="width:78%;height:200px;">{$detail.c_content|htmlspecialchars_decode|stripslashes}</script>
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">回复人</label>
+								<div class="col-sm-6">
+									<input type="text" name="c_name" id="c_name" value="{$admin.username}" class="form-control">
+								</div>
+							</div>
+							<div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<div class="col-sm-4 col-sm-offset-2">
+									<button class="btn btn-primary" type="submit">保存内容</button>
+									<a class="btn btn-white" href="{:U('Liuyan/index')}">取消</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<include file="Public:footer" />
+
+		<script type="text/javascript">
+			$(function(){		
+				$('#signupForm').ajaxForm({		
+					success: complete, 
+					dataType: 'json'
+				});
+				
+				function complete(data){		
+					if(data.status==1){
+						
+						layer.alert(data.info, {icon: 6}, function(index){
+			 			layer.close(index);
+						window.location.href=data.url;
+						});
+					}else{
+						layer.alert(data.info, {icon: 5});
+						return false;	
+					}
+				}	 
+			});
+		</script>
+		<script type="text/javascript">
+		
+		var editorOption = { 
+		toolbars:[[
+	            'fullscreen', 'source', '|', 'undo', 'redo', '|',
+	            'bold', 'italic', 'underline','removeformat', 'formatmatch', 
+	            'pasteplain', '|', 'forecolor', 'fontfamily', 'fontsize', '|', 'link', 'unlink',
+	            'simpleupload','emotion','attachment']], 
+		}; 
+		var editor_a = new baidu.editor.ui.Editor(editorOption);
+		editor_a.render('editor');
+		
+		</script>
+	</body>
+
+</html>
+
